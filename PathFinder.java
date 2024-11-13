@@ -5,7 +5,7 @@ import java.awt.event.ActionListener;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class PathfindingVisualizer {
+public class PathFinder {
     private static final int ROWS = 20;
     private static final int COLS = 20;
     private static final int CELL_SIZE = 30;
@@ -20,11 +20,11 @@ public class PathfindingVisualizer {
     private JButton[][] cells = new JButton[ROWS][COLS];
 
     public static void main(String[] args) {
-        new PathfindingVisualizer().createGUI();
+        new PathFinder().createGUI();
     }
 
     private void createGUI() {
-        JFrame frame = new JFrame("Pathfinding Visualizer");
+        JFrame frame = new JFrame("PathFinder");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(COLS * CELL_SIZE, ROWS * CELL_SIZE + 50);
         frame.setLocationRelativeTo(null);
